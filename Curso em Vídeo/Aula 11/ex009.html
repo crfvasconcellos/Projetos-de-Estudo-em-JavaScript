@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Brasil</title>
+</head>
+<body>
+    <h1>Verifica Brasil</h1>
+    Onde Você Nasceu: <input type="text" id="pais">
+
+    <button>verificar</button>
+    <h3></h3>
+
+
+    <script>
+        
+        var botao = document.getElementsByTagName('button')[0]
+
+        botao.addEventListener('click',verificar)
+
+        function verificar(){
+
+            var pais = ((document.getElementById('pais')).value).toUpperCase()
+            var resp = document.getElementsByTagName('h3')[0]
+
+
+            if(pais == 'BRASIL'){
+                resp.innerText = 'Você é Brasileiro!!!!'
+
+            }
+            else{
+                resp.innerText = 'Você não é Brasileiro!'
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html>
