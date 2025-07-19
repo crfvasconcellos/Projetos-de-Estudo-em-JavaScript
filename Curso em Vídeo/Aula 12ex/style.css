@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top:250px;
+    display: flex;
+    background-color: rgb(31, 80, 184);
+    font: normal 15pt Arial;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.itens{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 10px;
+    width: 70vh;
+    border-radius: 15px;
+    box-shadow: 4px 6px 20px black
+}
